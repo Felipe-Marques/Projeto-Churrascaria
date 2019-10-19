@@ -1,0 +1,32 @@
+#copyright
+    font-family: $fonte_principal
+    color: $branco
+    font-size: 1.3rem
+
+#copyright a
+    text-decoration: none
+
+#voltar-topo
+    color: $laranja_claro
+    display: inline-block
+    transition: .5s ease
+
+#voltar-topo:hover
+    color: $amarelo_escuro
+
+.scrollTop
+    position: fixed
+    bottom: 60px
+    right: 10px
+    transition: all .5s ease
+    animation: paraCima
+    animation-duration: 4s
+    animation-iteration-count: infinite
+
+@keyframes paraCima
+    0%
+        transform: translateY(10%)
+    50%
+        transform: translateY(-10%)
+    100%
+        transform: translateY(10%)

@@ -1,0 +1,100 @@
+.equipe
+    padding: 30px 0 40px
+    background: rgba(0,0,0,0.6)
+    text-align: center
+    overflow: hidden
+    position: relative
+
+.equipe .foto
+    display: inline-block
+    width: 130px
+    height: 130px
+    margin-bottom: 50px
+    position: relative
+    z-index: 1
+
+.equipe .foto:before 
+    content: ""
+    width: 100%
+    height: 0
+    border-radius: 50%
+    background: $amarelo_escuro
+    position: absolute
+    bottom: 135%
+    right: 0
+    left: 0
+    transform: scale(3)
+    transition: all 0.3s linear 0s 
+
+.equipe:hover .foto:before
+    height: 100%
+
+.equipe .foto:after
+    content: ""
+    width: 100%
+    height: 100%
+    border-radius: 50%
+    background: $amarelo_escuro
+    position: absolute
+    top: 0
+    left: 0
+    z-index: -1
+
+.equipe .foto img
+    width: 100%
+    height: auto
+    border-radius: 50%
+    transform: scale(1)
+    transition: all 0.9s ease 0s
+
+.equipe:hover .foto img
+    box-shadow: 0 0 0 14px $branco
+    transform:  scale(0.7)
+
+.equipe .equipe-content
+    margin-bottom: 30px
+
+.equipe .titulo 
+    font-size: 22px
+    font-weight: 700
+    color: $amarelo_escuro
+    letter-spacing: 1px
+    text-transform: capitalize
+    margin-bottom: 5px
+
+.equipe .funcao
+    display: block
+    font-size: 15px
+    color: $branco
+    text-transform: capitalize
+
+.equipe .contatos
+    width: 100%
+    padding: 0
+    margin: 0
+    background: $amarelo_escuro
+    position: absolute
+    bottom: -100px
+    left: 0
+    transition: all 0.5s ease 0s
+
+.equipe:hover .contatos
+    bottom: 0
+
+.equipe .contatos li 
+    display: inline-block
+    padding: 10px 20px
+    font-size: 21px
+    transition: all 0.3s ease 0s
+
+.equipe .contatos li a 
+    color: $marron_escuro
+
+.equipe .contatos li:hover 
+    background: $marron_escuro
+    cursor: pointer
+
+.equipe .contatos li a:hover 
+    color: $amarelo_escuro
+    text-decoration: none
+    

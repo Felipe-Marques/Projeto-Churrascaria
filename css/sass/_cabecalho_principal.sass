@@ -1,0 +1,88 @@
+header
+    min-height: calc( 100vh - 94px)
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(200,0,0,0.3)), url(../../videos/bnanimacao.gif)    // Após o linear-gradient não deve haver espaço.
+    background-position: center
+    background-size: cover
+    background-attachment: fixed
+    background-repeat: no-repeat
+    position: relative
+
+.row-bn
+    min-height: calc( 100vh - 94px)
+
+.banner h1 
+    border-top: 6px dotted $amarelo
+    border-bottom: 6px dotted $amarelo
+    // Animação do banner
+    animation: paraDireita 
+    animation-duration: 4s
+    animation-fill-mode: forwards
+
+//keyframes para a animação!!
+@keyframes paraDireita 
+    0%
+        transform: translateX(-100px)
+        opacity: 0
+    50%
+        transform: translateX(30px)
+    100%
+        transform: translateX(0)
+        opacity: 1
+
+.banner h1 small
+    font-family: $fonte_principal
+    color: $branco_banner
+
+.banner h1 strong
+    font-family: $fonte_principal
+    color: $amarelo_banner
+
+.pedir-btn
+    color: $branco
+    background: $marron_escuro
+    font-size: 2rem
+    border: 2px solid $amarelo_escuro
+    transition: all 0.5s ease-in-out
+    animation: paraEsquerda
+    animation-duration: 4s
+    animation-fill-mode: forwards
+
+.pedir-btn:hover
+    color: $vermelho_escuro
+    border: 2px solid $vermelho_claro
+    background: $amarelo_escuro
+
+@keyframes paraEsquerda
+    0%
+        transform: translateX(100px)
+        opacity: 0
+    50%
+        transform: translateX(-30px)
+    100%
+        transform: translateX(0)
+        opacity: 1
+
+.btn-adiante
+    display: inline-block
+    position: absolute
+    bottom: 5%
+    left: 50%
+    color: $marron_escuro
+    background: $laranja_maisclaro
+    border-radius: 10px
+    transition: all 0.5 ease
+    animation: paraBaixo
+    animation-duration: 4s
+    animation-iteration-count: infinite
+
+.btn-adiante:hover 
+    background: $amarelo
+    color: $marron_escuro
+
+@keyframes paraBaixo
+    0%
+        transform: translateY(-10px)
+    50%
+        transform: translateY(10px)
+    100%
+        transform: translateY(-10px)

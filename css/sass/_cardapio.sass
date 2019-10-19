@@ -1,0 +1,41 @@
+.parent-container
+    font-family: $fonte_principal
+
+.container h1 
+    font-family: $fonte-principal
+    color: $branco
+
+.item-container
+    position: relative
+    overflow: hidden
+    background: linear-gradient(rgb(0,0,0), rgb(0,0,0))
+
+.item-img
+    transition: all 2s ease
+
+.item-container:hover .item-img
+    transform: scale(1.2)
+    opacity: 0.5
+
+.item-link
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    color: $amarelo_escuro
+    border-bottom: 2px solid $amarelo_escuro
+    border-top: 2px solid $amarelo_escuro
+    transition: all 2s ease
+    opacity: 0
+
+.item-container:hover .item-link
+    opacity: 1
+
+.item-link:hover
+    color: $branco
+    border: 2px solid $amarelo_escuro
+    background: $marron_escuro
+
+.item-container:hover
+    outline: 10px solid $amarelo_escuro
+    outline-offset: -0.8rem
