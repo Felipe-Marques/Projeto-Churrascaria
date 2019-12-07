@@ -11,7 +11,7 @@ $(document).ready(function() {
         $('.navbar-toggler').toggleClass('change')
     });
 
-    //MAGNIFIC POPUP PARA QUANDO CLICAR NA IMAGEM
+    //MAGNIFIC POPUP PARA QUANDO CLICAR NA IMAGEM DO MENU FOOD.
     $("#menuFood").magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -20,8 +20,7 @@ $(document).ready(function() {
             enabled: true
         }
     });
-
-    //MAGNIFIC POPUP PARA QUANDO CLICAR NA IMAGEM
+    //MAGNIFIC POPUP PARA QUANDO CLICAR NA IMAGEM DO MENU DRINK
     $("#menuDrink").magnificPopup({
         delegate: 'a',
         type: 'image',
@@ -30,14 +29,14 @@ $(document).ready(function() {
             enabled: true
         }
     });
-
-    //SLICK CARROSSEL PARA SLIDE NO CARDÁPIO
-    $(".carrosel").slick({
+    //CARROSSEL DE IMAGENS DA CHURRASCARIA
+    $('.carrossel').slick({
         centerMode: true,
-        mobileFist: true,
-        arrows: false,
         centerPadding: '60px',
         slidesToShow: 3,
+        //Retirando a prev e nextArrow do Slick.
+        nextArrow: false,
+        prevArrow: false,
         responsive: [{
                 breakpoint: 768,
                 settings: {
@@ -57,28 +56,36 @@ $(document).ready(function() {
                 }
             }
         ]
-
     });
 
-    //CARROSSEL DE IMAGENS DA CHURRASCARIA E DA COZINHA
-    $('.fotos-churrascaria, .fotos-cozinha').slick({
-        autoplay: true,
-        autoplaySpeed: 700,
+    //SLIDE CHURRASCARIA 
+    $('.fotos-churrascaria').slick({
+        dots: false,
         infinite: true,
         speed: 500,
-        arrows: false,
         fade: true,
-        cssEase: 'Linear'
+        prevArrow: false,
+        nextArrow: false,
+        cssEase: 'linear'
     });
 
-
+    //SLIDE COZINHA 
+    $('.fotos-cozinha').slick({
+        dots: false,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        prevArrow: false,
+        nextArrow: false,
+        cssEase: 'linear'
+    });
 
     //FIXAR O MENU DE NAVEGAÇÃO NO TOPO DA PÁGINA
     $(window).scroll(function() {
         let position = $(this).scrollTop();
         console.log(position);
 
-        if (position >= 718) {
+        if (position >= 818) {
             $('.navbar').addClass('navbar-background');
             $('.navbar').addClass('fixed-top');
         } else {
