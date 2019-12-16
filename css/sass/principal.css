@@ -517,6 +517,7 @@ body {
 
 .mapa {
   min-height: 60vh;
+  height: 100%;
   border-radius: 5px;
 }
 
