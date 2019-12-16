@@ -24,8 +24,8 @@
 
 header {
   min-height: calc( 100vh - 94px);
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(200, 0, 0, 0.3))), url(../../videos/bnanimacao.gif);
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 0, 0, 0.3)), url(https://drive.google.com/file/d/1AETjVcDU1L9GK_jfO5oirWaB3GDZoWC1/view?usp=sharing);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(200, 0, 0, 0.3))), url(../../files/gif/bnanimacao.gif);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(200, 0, 0, 0.3)), url(../../files/gif/bnanimacao.gif);
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
