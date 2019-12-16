@@ -291,6 +291,7 @@ header {
 body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(59, 13, 13, 0.6)), to(rgba(59, 13, 13, 0.8))), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
   background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
+  overflow-x: hidden;
 }
 
 .parent-container {
