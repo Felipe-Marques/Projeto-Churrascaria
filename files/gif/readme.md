@@ -1,0 +1,1 @@
+# Pasta para o Gif.
