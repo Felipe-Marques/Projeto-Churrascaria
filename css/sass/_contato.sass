@@ -37,7 +37,6 @@
 #contato .cartao textarea::placeholder
     color: $marron_claro
     font-style: italic
-    text-align: center
 
 .contato-btn 
     color: $amarelo_escuro
@@ -50,3 +49,23 @@
     border-color: $marron_escuro
     color: $marron_escuro
     transition: all 0.5s ease-in-out
+
+/** Breakpoint
+@media screen and ( max-width:425px)
+    
+    #contato .contato-mapa,
+    #contato .contato
+        padding: 0
+
+    .mapa 
+        height: 400px
+
+    #contato .cartao-cabecalho h1
+        font-size: 1.7rem
+
+    #contato .cartao textarea::placeholder,
+    #contato .cartao input::placeholder
+        font-size: 1rem
+
+            
+

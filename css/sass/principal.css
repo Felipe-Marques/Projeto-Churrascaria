@@ -1,5 +1,6 @@
 .info {
   background: #391005;
+  width: 100%;
 }
 
 .info a {
@@ -22,6 +23,13 @@
   text-decoration: none;
 }
 
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  #logo-div {
+    text-align: center !important;
+  }
+}
+
 header {
   min-height: calc( 100vh - 94px);
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(200, 0, 0, 0.3)));
@@ -31,10 +39,12 @@ header {
   background-attachment: fixed;
   background-repeat: no-repeat;
   position: relative;
+  width: 100%;
 }
 
 .row-bn {
   min-height: calc( 100vh - 94px);
+  width: 100%;
 }
 
 .banner h1 {
@@ -151,7 +161,7 @@ header {
   display: inline-block;
   position: absolute;
   bottom: 5%;
-  left: 50%;
+  left: 48%;
   color: #391005;
   background: #ffae58;
   border-radius: 10px;
@@ -197,6 +207,13 @@ header {
   100% {
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
+  }
+}
+
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  .btn-adiante {
+    left: 43%;
   }
 }
 
@@ -292,6 +309,11 @@ body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(59, 13, 13, 0.6)), to(rgba(59, 13, 13, 0.8))), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
   background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
   overflow-x: hidden;
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .parent-container {
@@ -580,25 +602,21 @@ body {
 #contato .cartao textarea::-webkit-input-placeholder {
   color: #ae986F;
   font-style: italic;
-  text-align: center;
 }
 
 #contato .cartao textarea:-ms-input-placeholder {
   color: #ae986F;
   font-style: italic;
-  text-align: center;
 }
 
 #contato .cartao textarea::-ms-input-placeholder {
   color: #ae986F;
   font-style: italic;
-  text-align: center;
 }
 
 #contato .cartao textarea::placeholder {
   color: #ae986F;
   font-style: italic;
-  text-align: center;
 }
 
 .contato-btn {
@@ -617,10 +635,40 @@ body {
   transition: all 0.5s ease-in-out;
 }
 
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  #contato .contato-mapa,
+  #contato .contato {
+    padding: 0;
+  }
+  .mapa {
+    height: 400px;
+  }
+  #contato .cartao-cabecalho h1 {
+    font-size: 1.7rem;
+  }
+  #contato .cartao textarea::-webkit-input-placeholder,
+  #contato .cartao input::-webkit-input-placeholder {
+    font-size: 1rem;
+  }
+  #contato .cartao textarea:-ms-input-placeholder,
+  #contato .cartao input:-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  #contato .cartao textarea::-ms-input-placeholder,
+  #contato .cartao input::-ms-input-placeholder {
+    font-size: 1rem;
+  }
+  #contato .cartao textarea::placeholder,
+  #contato .cartao input::placeholder {
+    font-size: 1rem;
+  }
+}
+
 #copyright {
   font-family: "Lobster", cursive;
   color: #f4f1cb;
-  font-size: 1.3rem;
+  font-size: 2rem;
 }
 
 #copyright a {
@@ -679,6 +727,13 @@ body {
   100% {
     -webkit-transform: translateY(10%);
             transform: translateY(10%);
+  }
+}
+
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  #copyright-div {
+    text-align: center !important;
   }
 }
 

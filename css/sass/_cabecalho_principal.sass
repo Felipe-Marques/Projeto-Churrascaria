@@ -6,9 +6,11 @@ header
     background-attachment: fixed
     background-repeat: no-repeat
     position: relative
+    width: 100%
 
 .row-bn
     min-height: calc( 100vh - 94px)
+    width: 100%
 
 .banner h1 
     border-top: 6px dotted $amarelo
@@ -66,7 +68,7 @@ header
     display: inline-block
     position: absolute
     bottom: 5%
-    left: 50%
+    left: 48%
     color: $marron_escuro
     background: $laranja_maisclaro
     border-radius: 10px
@@ -86,3 +88,8 @@ header
         transform: translateY(10px)
     100%
         transform: translateY(-10px)
+
+/** Breakpoint
+@media screen and ( max-width:425px)
+    .btn-adiante
+        left: 43%

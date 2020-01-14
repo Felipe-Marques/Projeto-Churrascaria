@@ -7,7 +7,7 @@
     <meta name="description" content="Site desenvolvido no curso de Front-end">
     <meta name="keywords" content="curso, frontend, completo, site, moderno">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Bootstrap Css-->
@@ -38,7 +38,7 @@
     <!--#INICIO - CABEÇALHO DA PÁGINA: REDES SOCIAIS -->
     <div class="container-fluid p-2 info" id="icones-topo">
         <div class="row">
-            <div class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-center flex-wrap">
+            <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-center flex-wrap">
                 <div class="p-2 info-icones">
                     <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
                     <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
@@ -46,8 +46,9 @@
                     <a href="#" class="mr-2" alt="whatsapp"><i class="fab fa-whatsapp-square fa-2x"></i></a>
                 </div>
             </div>
-
-            <h2 id="logo" class="p-2 text-capitalize"><a href="#" tittle="Voltar ao Início">Rio de Janeiro,RJ</a></h2>
+            <div id="logo-div" class="col-12 col-sm-6 text-right">
+                <h2 id="logo" class="p-2 text-capitalize"><a href="#" tittle="Voltar ao Início">Rio de Janeiro-RJ</a></h2>
+            </div>
         </div>
     </div>
     <!--#FIM - CABEÇALHO DA PÁGINA: REDES SOCIAIS -->
@@ -70,7 +71,7 @@
             </div>
         </div>
 
-        <a href="#cardapio" alt="Ir para a próxima sessão do site." class="btn btn-adiante"><i class="fas fa-arrow-down" alt="Ir para a próxima sessão do site."></i></a>
+        <a href="#cardapio" alt="Ir para a próxima sessão do site." class="mx-auto btn btn-adiante"><i class="fas fa-arrow-down" alt="Ir para a próxima sessão do site."></i></a>
     </header>
     <!--#FIM - CABEÇALHO DA PAGINA: ÁREA DESTINADA AO BANNER PRINCIPAL -->
 
@@ -475,13 +476,13 @@
                             <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
 
                                 <!-- #Inicio - Foto da Pessoa -->
-                                <div class="align-self-center ml-5">
+                                <div class="col-12 align-self-center ml-5">
                                     <img src="files/imgs/equipe/e02.jpg" alt="Cliente" class="rounded-circle recomendacao-foto">
                                 </div>
                                 <!-- #Fim - Foto da Pessoa -->
 
                                 <!-- #Inicio - Texto de Recomendação -->
-                                <div class="align-self-center recomendacao-nome px-5">
+                                <div class="col-12 align-self-center recomendacao-nome px-5">
                                     <h2 class="text-capitalize mb-3">Cliente02</h2>
                                     <p class="recomendacao-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, placeat. Reprehenderit, harum. Harum natus odio expedita voluptatibus ratione cum quod.</p>
                                 </div>
@@ -515,7 +516,7 @@
             <div class="row">
 
                 <!--#INICIO - ÁREA DO GOOGLE MAPS-->
-                <div class="col-md-6 my-3">
+                <div class="col-12 col-md-6 my-3 contato-mapa">
                     <div class="embed-responsive by9 mapa">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d67923.73963626941!2d-43.215136755991914!3d-22.9353079741293!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9bde559108a05b%3A0x50dc426c672fd24e!2sRio%20de%20Janeiro%2C%20RJ!5e0!3m2!1spt-BR!2sbr!4v1570738829965!5m2!1spt-BR!2sbr"
                             width="600" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -524,7 +525,7 @@
                 <!--#FIM - ÁREA DO GOOGLE MAPS-->
 
                 <!--#INICIO - ÁREA CONTATOS-->
-                <div class="col-md-6 my-3 align-self-center">
+                <div class="col-12 col-md-6 my-3 align-self-center contato">
                     <div class="cartao text-center">
                         <div class="cartao-cabecalho text-uppercase">
                             <h1 class="text-uppercase">entre em contato</h1>
@@ -591,7 +592,7 @@
     <footer>
         <div class="container-fluid p-2 info" id="icones-rodape">
             <div class="row">
-                <div class="col d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-center flex-wrap">
+                <div class="col-12 col-sm-6 d-flex justify-content-center justify-content-md-between justify-content-sm-between align-items-center flex-wrap">
                     <div class="p-2 info-icones">
                         <a href="#" class="mr-2" alt="facebook"><i class="fab fa-facebook-square fa-2x"></i></a>
                         <a href="#" class="mr-2" alt="instagram"><i class="fab fa-instagram fa-2x"></i></a>
@@ -600,13 +601,16 @@
                     </div>
                 </div>
 
-                <h2 id="copyright" class="p-2 text-capitalize"><a href="#" tittle="Voltar ao Início">&COPY;copyright 2019</a></h2>
-
+                <div id="copyright-div" class="col-12 col-sm-6 text-right">
+                    <h2 id="copyright" class="p-2 text-capitalize"><a href="https://t.me/Dev_felipe_marques" tittle="Fale com o desenvolvedor">&COPY;copyright 2019</a></h2>
+                </div>
             </div>
         </div>
 
-        <!--BOTÃO DE RETORNER AO TOPO -->
+        <!--BOTÃO DE RETORNAR AO TOPO -->
         <a href="#icones-topo" class="py-1" id="voltar-topo" title="Voltar ao Topo"><i class="fas fa-arrow-circle-up fa-3x"></i></a>
+        <!--BOTÃO DE RETORNAR AO TOPO -->
+
     </footer>
     <!--#FIM - RODAPÉ -->
 
