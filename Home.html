@@ -23,11 +23,11 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster&display=swap">
 
     <!--Magnific Popups - para abrir as imagens em formato de slide-->
-    <link rel="stylesheet" href="../Projeto-Churrascaria/Magnific-popup/magnific-popup.css">
+    <link rel="stylesheet" href="Magnific-popup/magnific-popup.css">
 
     <!--Slick Carrossel - Para efeito de slide nas imagens dos Cardápios-->
     <!--<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />-->
-    <link rel="stylesheet" type="text/css" href="../Projeto-Churrascaria/css/slick.css">
+    <link rel="stylesheet" href="css/slick.css">
 
     <title>NA BRASA &bull; CHURRASCARIA</title>
 </head>
@@ -262,7 +262,7 @@
     <section class="py-5" id="sobre">
         <div class="container">
             <div class="row">
-                <div class="col-md-7 my-5 sobre-conteudo">
+                <div class="col-md-7 col-12 my-5 sobre-conteudo">
                     <h1 class="text-uppercase display-5">sobre nós</h1>
                     <h2>Lorem ipsum euismod vivamus ullamcorper nunc etiam hac scelerisque, ac mi eros ligula etiam a arcu aliquam, scelerisque dolor orci metus lorem at eu. est pharetra cubilia suscipit, nisi tempus. </h2>
 
@@ -270,7 +270,7 @@
 
                 </div>
 
-                <div class="col-md-5 col-sm-12 fotos-churrascaria">
+                <div class="col-md-5 col-12 fotos-churrascaria">
                     <img src="./files/imgs/restaurante/r1.jpg" alt="Imagem da Churrascaria" class="img-thumbnail">
                     <img src="./files/imgs/restaurante/r2.jpg" alt="Imagem da Churrascaria" class="img-thumbnail">
                     <img src="./files/imgs/restaurante/r3.jpg" alt="Imagem da Churrascaria" class="img-thumbnail">
@@ -290,7 +290,7 @@
 
             <div class="row">
                 <!--#Inicio - Cartão Funcionário 01-->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-12 col-md-6 col-lg-3 colaborador">
                     <div class="equipe">
                         <div class="foto">
                             <img src="files/imgs/equipe/e01.jpg" alt="Foto do Funcionário">
@@ -319,7 +319,7 @@
                 <!--#Fim - Cartão Funcionário 01-->
 
                 <!--#Inicio - Cartão Funcionário 02-->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-12 col-md-6 col-lg-3 colaborador">
                     <div class="equipe">
                         <div class="foto">
                             <img src="files/imgs/equipe/e02.jpg" alt="Foto do Funcionário">
@@ -348,7 +348,7 @@
                 <!--#Fim - Cartão Funcionário 02-->
 
                 <!--#Inicio - Cartão Funcionário 03-->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-12 col-md-6 col-lg-3 colaborador">
                     <div class="equipe">
                         <div class="foto">
                             <img src="files/imgs/equipe/e03.jpg" alt="Foto do Funcionário">
@@ -377,7 +377,7 @@
                 <!--#Fim - Cartão Funcionário 03-->
 
                 <!--#Inicio - Cartão Funcionário 04-->
-                <div class="col-md-3 col-sm-6">
+                <div class="col-12 col-md-6 col-lg-3">
                     <div class="equipe">
                         <div class="foto">
                             <img src="files/imgs/equipe/e04.jpg" alt="Foto do Funcionário">
@@ -417,13 +417,13 @@
         <div class="container">
             <div class="row">
 
-                <div class="col-md-5 col-sm-12 fotos-cozinha" style="transform: rotate(-3deg)">
+                <div class="col-md-5 col-12 fotos-cozinha" style="transform: rotate(-3deg)">
                     <img src="./files/imgs/cozinha/c1.jpg" alt="Imagem da Cozinha" class="img-thumbnail">
                     <img src="./files/imgs/cozinha/c2.jpg" alt="Imagem da Cozinha" class="img-thumbnail">
                     <img src="./files/imgs/cozinha/c3.jpg" alt="Imagem da Cozinha" class="img-thumbnail">
                 </div>
 
-                <div class="col-md-7 my-5 sobre-conteudo">
+                <div class="col-md-7 col-12 my-5 sobre-conteudo">
                     <h1 class="text-uppercase display-5">nossa cozinha</h1>
                     <h2>Lorem ipsum euismod vivamus ullamcorper nunc etiam hac scelerisque, ac mi eros ligula etiam a arcu aliquam, scelerisque dolor orci metus lorem at eu. est pharetra cubilia suscipit, nisi tempus. </h2>
 
@@ -451,8 +451,18 @@
                             <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
 
                                 <!-- #Inicio - Foto da Pessoa -->
-                                <div class="align-self-center ml-5">
-                                    <img src="files/imgs/equipe/e01.jpg" alt="Cliente" class="rounded-circle recomendacao-foto">
+                                <div class="recomendacao-foto align-self-center ml-5">
+
+                                    <img src="files/imgs/equipe/e01.jpg" alt="Cliente" class="rounded-circle">
+
+                                    <div class="recomentacao-rating text-center">
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                    </div>
+
                                 </div>
                                 <!-- #Fim - Foto da Pessoa -->
 
@@ -464,7 +474,10 @@
                                 <!-- #Fim - Texto de Recomendação -->
 
                             </div>
+
+
                         </div>
+
                     </div>
                 </div>
                 <!--#Fim - Recomendação 01-->
@@ -476,13 +489,22 @@
                             <div class="col-lg-10 mx-auto d-flex recomendacao-item py-3">
 
                                 <!-- #Inicio - Foto da Pessoa -->
-                                <div class="col-12 align-self-center ml-5">
-                                    <img src="files/imgs/equipe/e02.jpg" alt="Cliente" class="rounded-circle recomendacao-foto">
+                                <div class="recomendacao-foto align-self-center ml-5">
+                                    <img src="files/imgs/equipe/e02.jpg" alt="Cliente" class="rounded-circle">
+
+                                    <div class="recomendacao-rating text-center">
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                        <i class="fas fa-star icon-rating"></i>
+                                    </div>
+
                                 </div>
                                 <!-- #Fim - Foto da Pessoa -->
 
                                 <!-- #Inicio - Texto de Recomendação -->
-                                <div class="col-12 align-self-center recomendacao-nome px-5">
+                                <div class="align-self-center recomendacao-nome px-5">
                                     <h2 class="text-capitalize mb-3">Cliente02</h2>
                                     <p class="recomendacao-texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, placeat. Reprehenderit, harum. Harum natus odio expedita voluptatibus ratione cum quod.</p>
                                 </div>
@@ -511,7 +533,7 @@
     <!--#FIM - AREA DE REMOMENDAÇÕES-->
 
     <!--#INICIO - AREA DE CONTATO-->
-    <section id="contato">
+    <section id="contato" class="py-5">
         <div class="container-fluid no-padding">
             <div class="row">
 
@@ -651,19 +673,19 @@
 
 
     <!--JQuery-->
-    <script src="../Projeto-Churrascaria/js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-3.4.1.min.js"></script>
     <!--Bootstrap Js-->
-    <script src="../Projeto-Churrascaria/js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
     <!--Necessário nos scripts abaixo, também usado para efeitos de imagens.-->
     <!--Efeito de fumaça com o Jquery-->
-    <script src="../Projeto-Churrascaria/js/jquery.ripples-min.js"></script>
+    <script src="js/jquery.ripples-min.js"></script>
     <!--Slick Carrossel - Para efeito de Slide no cardápio-->
-    <script src="../Projeto-Churrascaria/js/slick.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <!--Magnific Popups - para abrir as imagens em formato de slide-->
-    <script src="../Projeto-Churrascaria/Magnific-popup/jquery.magnific-popup.min.js"></script>
+    <script src="Magnific-popup/jquery.magnific-popup.min.js"></script>
 
     <!--Meu js personalizado-->
-    <script src="../Projeto-Churrascaria/js/script.js"></script>
+    <script src="js/script.js"></script>
 
 
 

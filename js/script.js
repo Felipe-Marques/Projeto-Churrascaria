@@ -85,7 +85,7 @@ $(document).ready(function() {
         let position = $(this).scrollTop();
         console.log(position);
 
-        if (position >= 818) {
+        if (position >= 715) {
             $('.navbar').addClass('navbar-background');
             $('.navbar').addClass('fixed-top');
         } else {
@@ -105,6 +105,7 @@ $(document).ready(function() {
         } else {
             $('#voltar-topo').removeClass('scrollTop');
         }
+
     });
 
 

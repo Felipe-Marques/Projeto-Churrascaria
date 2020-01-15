@@ -215,6 +215,9 @@ header {
   .btn-adiante {
     left: 43%;
   }
+  .pedir-btn {
+    margin-bottom: 40px !important;
+  }
 }
 
 .navbar {
@@ -305,6 +308,12 @@ header {
           transform: rotate(-45deg) translate(6px, -3px);
 }
 
+@media screen and (max-width: 768px) {
+  .navbar-toggler {
+    padding: 0 0 !important;
+  }
+}
+
 body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(59, 13, 13, 0.6)), to(rgba(59, 13, 13, 0.8))), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
   background: linear-gradient(to right, rgba(59, 13, 13, 0.6), rgba(59, 13, 13, 0.8)), url(../../files/imgs/bg.jpg) center/cover fixed no-repeat;
@@ -372,6 +381,12 @@ body {
   outline-offset: -0.8rem;
 }
 
+@media screen and (max-width: 425px) {
+  #cardapio {
+    padding: 0 0 !important;
+  }
+}
+
 .sobre-conteudo h1 {
   color: #f1c70a;
 }
@@ -386,7 +401,25 @@ body {
 .fotos-churrascaria {
   -webkit-transform: rotate(3deg);
           transform: rotate(3deg);
-  padding: 50px;
+}
+
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  .sobre-conteudo {
+    margin: 10px 0 0 0 !important;
+  }
+  .fotos-churrascaria {
+    margin-top: 20px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 768px) {
+  .fotos-cozinha, .fotos-churrascaria {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    bottom: 20px;
+  }
 }
 
 .equipe {
@@ -493,7 +526,7 @@ body {
 
 .equipe .contatos li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 19px;
   font-size: 21px;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -511,6 +544,19 @@ body {
 .equipe .contatos li a:hover {
   color: #f1c70a;
   text-decoration: none;
+}
+
+/** Breakpoint */
+@media screen and (max-width: 768px) {
+  .colaborador {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1439.98px) {
+  .equipe .contatos li {
+    padding: 10px 13px;
+  }
 }
 
 #Recomendacao h1 {
@@ -536,6 +582,32 @@ body {
 .recomendacao-texto {
   font-family: Arial;
   text-align: justify;
+}
+
+.icon-rating {
+  color: #ffc107;
+}
+
+/** Breakpoint */
+@media screen and (max-width: 425px) {
+  .recomendacao-foto {
+    margin: 0 5px !important;
+  }
+  .recomendacao-foto img {
+    width: 100px;
+  }
+  .recomendacao-nome {
+    padding: 0 5px !important;
+  }
+  .recomendacao-nome h2 {
+    font-size: 1.7rem;
+  }
+  .recomendacao-texto {
+    font-size: .7rem;
+  }
+  .icon-rating {
+    width: 15px;
+  }
 }
 
 .mapa {
